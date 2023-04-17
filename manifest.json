@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Reddit Redirect Extension",
+  "version": "1.0",
+  "description": "Redirects from reddit.com to a local server",
+  "icons": {},
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "*://*.reddit.com/*"
+  ]
+}
